@@ -1,0 +1,111 @@
+:root {
+    --background_color: #272b30;
+    --white_color: #ffffff;
+    --singer_header_color: #E68285;
+    --hover_icon: #D62E33;
+    --singer_text_color: #CCCCCC
+}
+
+li a {
+    text-decoration: none;
+    color: var(--white_color)
+}
+
+/* ***************************HEADER************************ */
+header {
+    background-image: linear-gradient(to bottom, rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url("../images/events-heavenly-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+header .menu .menu-toggle {
+   cursor: pointer;
+   left:20px
+
+}
+
+header .menu .menu-vertical {
+    position:fixed ;
+    left: -300px;
+    top: 0;
+    bottom: 0
+}
+header .menu .menu-vertical li{
+    margin-bottom:40px
+}
+header .menu .menu-vertical li a{
+    font-size:1.5rem
+}
+.fa-xmark{
+    cursor:pointer ;
+    color : white ;
+    float:right
+
+}
+/* ***************************SINGERS************************/
+.singers h3 {
+    background-color: var(--singer_header_color);
+    cursor: pointer;
+    color: var(--white_color)
+}
+
+.singers .singer p {
+    background-color: var(--singer_text_color);
+    display: none;
+}
+
+.singers .singer:nth-of-type(1) p {
+    display: block
+}
+
+/* ***************************COUNTDOWN************************/
+.count_down {
+    padding-block: 100px;
+    background-image: linear-gradient(to bottom, rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url("../images/invitation-2508607__340.jpg");
+    background-repeat: no-repeat;
+}
+
+.count_down .timer {
+    border: 1px solid var(--white_color);
+    text-align: center;
+    color: var(--white_color);
+    padding: 50px;
+    font-size: 2rem;
+}
+
+/* ***************************CONTACT-US************************/
+.contact-us .social_media li {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 20px;
+    border: 1px solid #999;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-us .social_media li:hover {
+    background-color: var(--hover_icon);
+    border: 1px solid var(--hover_icon);
+}
+
+.contact-us .social_media li:hover a {
+    color: var(--white_color) !important;
+}
+
+.contact-us form input,
+.contact-us form .send_message_btn {
+    border-radius: 0 !important;
+}
+
+.contact-us form textarea {
+    border: 1px solid #ccc
+}
+
+
+
+::placeholder {
+    color: #999 !important
+}
